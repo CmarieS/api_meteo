@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<heah>
+    <title>Test APi et code</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/meteo.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</heah>
+
+<body>
+    <div class="container">
+
+        <h1>Application météo</h1>
+        <div class="bloc-saisit">
+            <input id="queryLoc" type="text" placeholder="Entrer une ville">
+            <input type="button" value="Valider" onclick="buttonClickGet()" />
+        </div>
+        <div class="bloc-logo-info">
+            <div class="bloc-logo">
+                <img src="ressources/jour/04d.svg" alt="logo du temps qu'il fait" class="logo-meteo">
+            </div>
+
+            <div class="bloc-info">
+                <table id="tableau" class="bloc-info-tableau">
+                    <tr>
+                        <th>Temp</th>
+                        <td class="temps"></td>
+                    </tr>
+                    <tr>
+                        <th>Température</th>
+                        <td class="temperature"></td>
+                    </tr>
+                    <tr>
+                        <th>Localisation</th>
+                        <td class="localisation"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="title-détails">
+            <h2>Détails température :</h2>
+        </div>
+        <div>
+            <h2>Aujourd'hui: </h2>
+            <div class="heure-bloc-prevision">
+                <div class="bloc-h">
+                    <p class="heure-nom-prevision"></p>
+                    <p class="heure-prevision-valeur"></p>
+                </div>
+                <div class="bloc-h">
+                    <p class="heure-nom-prevision"></p>
+                    <p class="heure-prevision-valeur"></p>
+                </div>
+                <div class="bloc-h">
+                    <p class="heure-nom-prevision"></p>
+                    <p class="heure-prevision-valeur"></p>
+                </div>
+                <div class="bloc-h">
+                    <p class="heure-nom-prevision"></p>
+                    <p class="heure-prevision-valeur"></p>
+                </div>
+                <div class="bloc-h">
+                    <p class="heure-nom-prevision"></p>
+                    <p class="heure-prevision-valeur"></p>
+                </div>
+                <div class="bloc-h">
+                    <p class="heure-nom-prevision"></p>
+                    <p class="heure-prevision-valeur"></p>
+                </div>
+                <div class="bloc-h">
+                    <p class="heure-nom-prevision"></p>
+                    <p class="heure-prevision-valeur"></p>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <h2>Les jours suivants:</h2>
+            <div class="jour-prevision-bloc">
+                <div class="bloc-j">
+                    <p class="jour-prevision-nom"></p>
+                    <p class="jour-prevision-temp"></p>
+                </div>
+                <div class="bloc-j">
+                    <p class="jour-prevision-nom"></p>
+                    <p class="jour-prevision-temp"></p>
+                </div>
+                <div class="bloc-j">
+                    <p class="jour-prevision-nom"></p>
+                    <p class="jour-prevision-temp"></p>
+                </div>
+                <div class="bloc-j">
+                    <p class="jour-prevision-nom"></p>
+                    <p class="jour-prevision-temp"></p>
+                </div>
+                <div class="bloc-j">
+                    <p class="jour-prevision-nom"></p>
+                    <p class="jour-prevision-temp"></p>
+                </div>
+                <div class="bloc-j">
+                    <p class="jour-prevision-nom"></p>
+                    <p class="jour-prevision-temp"></p>
+                </div>
+                <div class="bloc-j">
+                    <p class="jour-prevision-nom"></p>
+                    <p class="jour-prevision-temp"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
